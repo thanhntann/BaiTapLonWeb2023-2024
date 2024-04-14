@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
+    <script src="Js/jquery-3.6.4.min.js"></script>
+    <script src="Js/javascript.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <title>Shop</title>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div id="slidehead">
+                <marquee title="Buy now" onmouseover="this.stop()" onmouseout="this.start()" class="slideshow" behavior="alternate">
+                        <img src="img/location.png" id="icon">
+                        <span style="margin-right: 5%;">Hệ thống cửa hàng toàn quốc</span> 
+                        <img src="img/telephone-call.png" id="icon">
+                        <span style="margin-right: 5%;"> Liên hệ tư vấn: 0123456789</span>
+                        <img src="img/photo-camera.png" id="icon">
+                        <span>Hãy chọn thực phẩm sạch chính là bảo vệ sức khỏe của chính ta và gia đình!!! </span>
+                </marquee>
+            </div>
+            <div class="banner">
+                <div class="menu">
+                    <div class="buttonmenu" onclick="clickMenu()">
+                        <img src="img/menubutton3lines.png">
+                    </div>
+                    <a href="#" onclick="event.preventDefault()">
+                        <div class="logo">
+                            <img src="img/abc.jpg" id="imglogo">
+                            <h2>Digital Food</h2>
+                        </div>
+                    </a>
+                    <div class="menuitem">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product.html">Shop</a></li>
+                        <li><a href="Review.html">Review</a></li>
+                        <li><a href="About Us.html">About us</a></li>
+                    </div>
+                    <form action="search" class="search-form">
+                        <img src="img/search.png">
+                        <input type="text" placeholder="Type product name..." class="txtsearch">
+                    </form>
+                    <div class="user">
+                        <a href="Login.html"><img src="img/user.png" width="32px" height="auto"></a>
+                        <div href="" id="btncart" href=""  onclick="clickCart()"><img src="img/add-to-cart.png" width="32px" height="auto"></div>
+                    </div>
+                </div>
+                <div class="banner-img">
+                    <img src="img/salebanner1.png" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="container1">
+            <class class="producer-list">
+                <div class="producer">
+                    <img src="img/canon.png">
+                </div>
+            </class>
+        </div>
+        <div class="center">
+            <div class="leftside">
+                <details open class="producer-checkbox">
+                    <summary>Danh mục sản phẩm </summary>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="canon">
+                        <span>Thực phẩm thủy sinh </span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="Nikon">
+                        <span>Trái cây </span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="Sony">
+                        <span>Rau củ sạch</span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="Kodak">
+                        <span>rau Đà Lạt </span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="Olympus">
+                        <span>Thực phẩm đã chế biến</span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="Panasonic">
+                        <span>Thực phẩm khô</span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="Fujifilm">
+                        <span>Đặc sản vùng miền</span>
+                    </div>
+                </details>
+                <details open class="price-select">
+                    <summary>Giá</summary>
+                    <select>
+                        <option selected disabled>Giá thấp nhất</option>
+                        <option value="1">20.000</option>
+                        <option value="2">100.000</option>
+                        <option value="3">1.000.000</option>
+                    </select>
+                    <span>-</span>
+                    <select>
+                        <option selected disabled>Giá cao nhất</option>
+                        <option value="4">50.000</option>
+                        <option value="5">1.000.000</option>
+                        <option value="6">10.000.000</option>
+                    </select>
+                    <button>Lọc</button>
+                </details>
+                <details open class="resolution-checkbox">
+                    <summary>Trọng lượng</summary>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="102">
+                        <span>5g</span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="62.5">
+                        <span>50g</span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="61">
+                        <span>500g</span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="60">
+                        <span>1kg</span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="51">
+                        <span>10kg</span>
+                    </div>
+                </details>
+                <details open class="resollution-checkbox">
+                    <summary>Thực phẩm đông lạnh</summary>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="none">
+                        <span>Thực phẩm tươi</span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="5">
+                        <span>Thực phẩm khô</span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="6">
+                        <span>Thực phẩm ăn nhanh </span>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" value="3">
+                        <span>Thực phẩm nhập khẩu </span>
+                    </div>
+                </details>
+            </div>
+            <div class="rightside">
+                <div class="sale-off">
+                    <p>Giảm giá 50%</p>
+                </div>
+                <img src="img/30%.png">
+                <img src="img/30.1%.png">
+                <div class="product-list" data-max-products="12">
+            
+                </div>
+                <div class="sale-off">
+                    <p>Giảm giá 30%</p>
+                </div>
+                <img src="img/50%.png">
+                <div class="product-list" data-max-products="12">
+    
+                </div>
+            </div>
+            <div class="myCart">
+                <div class="title-cart">
+                    Your Cart
+                </div>
+                <div class="cart-content">
+                </div>
+                <div class="cart-total">
+                    <h2>Total</h2>
+                    <p class="total">0$</p>
+                </div>
+                <div class="btn-carts">
+                    <div class="btn-Buy">
+                        Buy Now
+                    </div>
+                    <div class="btn-close" onclick="clickCart()">
+                        Close
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="intro">
+                    <h3>Giới thiệu</h3>
+                    <ul class="footerlinks">
+                        <li><a href="#" onclick="event.preventDefault()">Về chúng tôi</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">Sản phẩm</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">Khuyến mãi</a></li>  
+                    </ul>
+                    
+                </div>
+                <div class="rules">
+                    <h3>Điều khoản</h3>
+                    <ul class="footerlinks">
+                        <li><a href="#" onclick="event.preventDefault()">Điều khoản sử dụng</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h3>Liên hệ</h3>
+                    <ul class="footerlinks">
+                        <li><img src="img/telephone.png" id="iconfooter">CSKH: 0123456789</li>
+                        <li><img src="img/mail.png" id="iconfooter">Email: phamtan04022k3@gmail.com</li>
+                        <li><p><img src="img/location1.png" id="iconfooter">Địa chỉ: 111/111 Quang Trung, phường 10, quận Gò Vấp, TP.HCM</p></li>
+                    </ul>
+                </div>
+                <div class="socialmedia">
+                    <h3>Mạng xã hội</h3>
+                    <ul class="footerlinks">
+                        <li><a href="https://www.facebook.com/thuandz321" target="_blank"><img src="img/facebook.png" id="iconfooter">Facebook</a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="img/twitter-sign.png" id="iconfooter" >Twitter</a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="img/youtube.png" id="iconfooter">Youtube</a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="img/instagram.png" id="iconfooter">Instagram</a></li>
+                    </ul>
+                </div>
+                
+            </div> 
+            <div class="copyright">
+                <p>Copyright © 2024 - Phát triển bởi Thành Tân</p>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>

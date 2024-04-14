@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Home.css">
+    <script src="Js/jquery-3.6.4.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div id="slidehead">
+                <marquee title="Buy now" onmouseover="this.stop()" onmouseout="this.start()" class="slideshow" behavior="alternate">
+                        <img src="img/location.png" id="icon">
+                        <span style="margin-right: 5%;">Hệ thống cửa hàng toàn quốc</span> 
+                        <img src="img/telephone-call.png" id="icon">
+                        <span style="margin-right: 5%;"> Liên hệ tư vấn: 0123456789</span>
+                        <img src="img/photo-camera.png" id="icon">
+                        <span>Hãy chọn thực phẩm sạch chính là bảo vệ sức khỏe của chính ta và gia đình!!!!</span>
+                </marquee>
+            </div>
+            <div class="banner">
+                <div class="menu">
+                    <div class="buttonmenu" onclick="clickMenu()">
+                        <img src="img/menubutton3lines.png">
+                    </div>
+                    <a href="#" onclick="event.preventDefault()">
+                        <div class="logo">
+                            <img src="img/abc.jpg" id="imglogo">
+                            <h2>Digital Food</h2>
+                        </div>
+                    </a>
+                    <div class="menuitem">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product.html">Shop</a></li>
+                        <li><a href="Review.html">Review</a></li>
+                        <li><a href="About Us.html">About us</a></li>
+                    </div>
+                    <form action="search" class="search-form">
+                        <img src="img/search.png">
+                        <input type="text" placeholder="Type product name..." class="txtsearch">
+                    </form>
+                    <div class="user">
+                        <a href="Login.html"><img src="img/user.png" width="32px" height="auto"></a>
+                        <div id="btncart" href=""  onclick="clickCart()"><img src="img/add-to-cart.png" width="32px" height="auto"></div>
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="titlehead">
+                        <h2>THỰC PHẨM SẠCH </h2>
+                    </div>
+                    <div class="titlecontent">
+                        Thực phẩm sạch là một phần quan trọng của chế độ ăn lành mạnh và cung cấp nhiều lợi ích cho sức khỏe.
+                    </div>
+                    <a href="Product.html" class="btnmua">
+                        <div>
+                            Mua ngay
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container1">
+                <div class="content-1">
+                    <img src="img/quality.png" id="container1-icon">
+                    Chúng tôi cam kết đảm bảo chất lượng sản phẩm để đáp ứng nhu cầu và mong đợi của quý khách hàng.
+                </div>
+                <div class="content-1">
+                    <img src="img/shield.png" id="container1-icon">
+                    Chúng tôi cung cấp dịch vụ bảo hành tốt nhất cho khách hàng.
+                </div>
+                <div class="content-1">
+                    <img src="img/customer-support.png" id="container1-icon">
+                    Chúng tôi cam kết cung cấp dịch vụ tốt nhất để đem đến sự hài lòng và tin tưởng của quý khách hàng.
+                </div>
+            </div>
+            <div class="container2">
+                <div class="eosr5">
+                    <div>
+                        <h2>Cá Ngừ</h2>
+                        <h3>Đây là một loại cá có giá trị dinh dưỡng cao và rất được ưa chuộng trong ẩm thực trên khắp thế giới.</h3>
+                    </div>
+                    
+                    <p>Cá ngừ là nguồn cung cấp protein chất lượng cao và axit béo omega-3 quan trọng cho sức khỏe. Chúng cũng giàu vitamin và khoáng chất như vitamin D, selen và iodine</p>
+                    <div>
+                        <h4>Chế biến</h4>
+                        <ul>
+                            <li>Sushi</li>
+                            <li>Sashimi và các món hấp</li>
+                            <li>Nướng, chiên</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btnXem" onclick="event.preventDefault()">
+                        <div>Xem ngay</div>
+                    </a>
+                </div>
+                <div>
+                    <img src="img/EOS-R5" id="cameraimg">
+                </div>
+            </div>
+            <div class="container3">
+                <h1>Products</h1>
+                <div class="product-list" data-max-products="4">
+                    
+                </div>
+                <a href="Product.html" class="see-all">
+                    <span>See more</span>
+                    <div id="right-img">
+                        <img src="img/right.png">
+                    </div>
+                </a>
+            </div>
+            <div class="container4">
+                <h1>Reviews</h1>
+                <div class="video-list">
+                    <a href="#" class="video" onclick="event.preventDefault()">
+                        <div class="div-imgreview">
+                            <img src="img/review.jpg" class="img-review1">
+                            <img src="img/play.png" class="img-review2">
+                            <p>25:00:00</p>
+                        </div>
+                        <div class="review-content">
+                            <h3>Tôm hùm - Chế biến tôm hùm hấp </h3>
+                            <p>Thành Tân</p>
+                            <div class="view-time">
+                                <p>1234 lượt xem</p>
+                                <li>3 day ago</li>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="video" onclick="event.preventDefault()">
+                        <div class="div-imgreview">
+                            <img src="img/review1.jpg" class="img-review1">
+                            <img src="img/play.png" class="img-review2">
+                            <p>13:40:00</p>
+                        </div>
+                        <div class="review-content">
+                            <h3>Salad rau củ quả </h3>
+                            <p>Thành Tân</p>
+                            <div class="view-time">
+                                <p>4321 lượt xem</p>
+                                <li>2 day ago</li>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="video" onclick="event.preventDefault()">
+                        <div class="div-imgreview">
+                            <img src="img/review2.jpg" class="img-review1">
+                            <img src="img/play.png" class="img-review2">
+                            <p>17:59:00</p>
+                        </div>
+                        <div class="review-content">
+                            <h3>sashimi cá ngừ đại dương</h3>
+                            <p>Thành Tân</p>
+                            <div class="view-time">
+                                <p>1222 lượt xem</p>
+                                <li>3 day ago</li>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="video" onclick="event.preventDefault()">
+                        <div class="div-imgreview">
+                            <img src="img/review3.jpg" class="img-review1">
+                            <img src="img/play.png" class="img-review2">
+                            <p>22:30:00</p>
+                        </div>
+                        <div class="review-content">
+                            <h3>Vườn sau sạch ở Đà Lạt</h3>
+                            <p>Thành Tân</p>
+                            <div class="view-time">
+                                <p>2222 lượt xem</p>
+                                <li>5 day ago</li>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="Review.html" class="see-all">
+                    <span>See more</span>
+                    <div id="right-img">
+                        <img src="img/right.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="container5">
+            <class class="producer-list">
+                <div class="producer">
+                    <img src="img/canon.png">
+                </div>
+                
+               
+            </class>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="intro">
+                    <h3>Giới thiệu</h3>
+                    <ul class="footerlinks">
+                        <li><a href="#" onclick="event.preventDefault()">Về chúng tôi</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">Sản phẩm</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">Khuyến mãi</a></li>  
+                    </ul>
+                    
+                </div>
+                <div class="rules">
+                    <h3>Điều khoản</h3>
+                    <ul class="footerlinks">
+                        <li><a href="#" onclick="event.preventDefault()">Điều khoản sử dụng</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h3>Liên hệ</h3>
+                    <ul class="footerlinks">
+                        <li><img src="img/telephone.png" id="iconfooter">CSKH: 0123456789</li>
+                        <li><img src="img/mail.png" id="iconfooter">Email: phamtan04022k3@gmail.com</li>
+                        <li><p><img src="img/location1.png" id="iconfooter">Địa chỉ: 111/111 Quang Trung, phường 10, quận Gò Vấp, TP.HCM</p></li>
+                    </ul>
+                </div>
+                <div class="socialmedia">
+                    <h3>Mạng xã hội</h3>
+                    <ul class="footerlinks">
+                        <li><a href="https://www.facebook.com/thuandz321" target="_blank"><img src="img/facebook.png" id="iconfooter">Facebook</a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="img/twitter-sign.png" id="iconfooter" >Twitter</a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="img/youtube.png" id="iconfooter">Youtube</a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="img/instagram.png" id="iconfooter">Instagram</a></li>
+                    </ul>
+                </div>
+                
+            </div> 
+            <div class="copyright">
+                <p>Copyright © 2024 - Thành Tân</p>
+            </div>
+        </div>
+        <div class="myCart">
+            <div class="title-cart">
+                Your Cart
+            </div>
+            <div class="cart-content">
+            </div>
+            <div class="cart-total">
+                <h2>Total</h2>
+                <p class="total">0$</p>
+            </div>
+            <div class="btn-carts">
+                <div class="btn-Buy">
+                    Buy Now
+                </div>
+                <div class="btn-close" onclick="clickCart()">
+                    Close
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/javascript.js"></script>
+</body>
+</html>

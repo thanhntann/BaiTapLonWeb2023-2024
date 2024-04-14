@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="/css/Review.css">
+    <script src="Js/jquery-3.6.4.min.js"></script>
+    <script src="Js/javascript.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <title>Review</title>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div id="slidehead">
+                <marquee title="Buy now" onmouseover="this.stop()" onmouseout="this.start()" class="slideshow" behavior="alternate">
+                    <img src="img/location.png" id="icon">
+                    <span style="margin-right: 5%;">Hệ thống cửa hàng toàn quốc</span> 
+                    <img src="img/telephone-call.png" id="icon">
+                    <span style="margin-right: 5%;"> Liên hệ tư vấn: 0123456789</span>
+                    <img src="img/photo-camera.png" id="icon">
+                    <span>Hãy chọn thực phẩm sạch chính là bảo vệ sức khỏe của chính ta và gia đình!!!</span>
+                </marquee>
+            </div>
+            <div class="banner">
+                <div class="menu">
+                    <div class="buttonmenu" onclick="clickMenu()">
+                        <img src="img/menubutton3lines.png">
+                    </div>
+                    <a href="#" onclick="event.preventDefault()">
+                        <div class="logo">
+                            <img src="img/add.png" id="imglogo">
+                            <h2>Digital Food</h2>
+                        </div>
+                    </a>
+                    <div class="menuitem">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product.html">Shop</a></li>
+                        <li><a href="Review.html">Review</a></li>
+                        <li><a href="About Us.html">About us</a></li>
+                    </div>
+                    <form action="search" class="search-form">
+                        <img src="img/search.png">
+                        <input type="text" placeholder="Type product name..." class="txtsearch">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br> <br><br><br>
+        <section id="review">
+            <div class="container">
+                <h2>Đánh giá sản phẩm</h2>
+            </div>
+            <div class="review-box">
+                <div class="review-item">
+                    <h3>Khoai lang </h3>
+                    <span class="rating">
+                        <span><img src="img/Rating 300.png" alt="Danh giá"> (3 lượt đánh giá)</span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </span>
+                    <div class="thumbnail1">
+                        <span><img src="img/Khoai-Lang.jpg" alt="Khoai lang "></span>
+                    </div>
+                    <div class="thumbnail">
+                        <p><img src="img/Avatar 755.png"><b>Es Muck</b></p>
+                    </div>
+                    <span><img src="img/Rating 300.png"></span>
+                    <p>Khoai lang rất ngon dẻo, lần sau tôi sẽ mua tiếp.</p>
+                    <div class="comment-actions">
+                        <button class="like-btn">Thích 👍</button>
+                        <button class="dislike-btn">Không thích 👎</button>
+                        <button class="reply-btn">Trả lời <textarea placeholder="Nhập câu trả lời của bạn..."></textarea></button>
+                    </div>
+                </div>
+                <div class="review-item">
+                  <h3>Tôm sú</h3>
+                  <span class="rating">
+                    <span> <img src="img/Rating 300.png" alt=" Danh giá "> (32 lượt đánh giá)</span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <div class="thumbnail1">
+                    <span><img src="img/tomSu.jpg" alt="Nikon D850"></span>
+                </div>
+                <div class="thumbnail">
+                    <p> <img src="img/Avatar 755.png" > <b>Mus Kill </b></p>
+                    </div>
+                    <span> <img src="img/Rating 299.png"></span>
+                    <p>Tôm sú rất tươi và ngon, giá cả hợp lý. </p>
+                    <div class="comment-actions">
+                      <button class="like-btn">Thích 👍</button>
+                      <button class="dislike-btn">Không thích 👎</button>
+                      <button class="reply-btn">Trả lời  <textarea placeholder="Nhập câu trả lời của bạn..." ></textarea></button>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                    <p> <img src="img/Avatar 755.png" > <b>King Lao </b></p>
+                    </div>
+                    <span> <img src="img/Rating 299.png"></span>
+                    <p>Tôm sú tươi, nhưng kích thước nhỏ hơn mong đợiy.</p>
+                    <div class="comment-actions">
+                      <button class="like-btn">Thích 👍</button>
+                      <button class="dislike-btn">Không thích 👎</button>
+                      <button class="reply-btn">Trả lời  <textarea placeholder="Nhập câu trả lời của bạn..." ></textarea></button>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                  <p> <img src="img/Avatar 755.png" > <b>Ris </b></p>
+                    </div>
+                    <span> <img src="img/Rating 299.png"></span>
+                    <p>Tôm sú tươi, nhưng kích thước nhỏ hơn mong đợi.</p>
+                    <div class="comment-actions">
+                      <button class="like-btn">Thích 👍</button>
+                      <button class="dislike-btn">Không thích 👎</button>
+                      <button class="reply-btn">Trả lời  <textarea placeholder="Nhập câu trả lời của bạn..." ></textarea></button>
+                    </div>
+                  </div>
+                </div>
+                  <div class="thumbnail">
+                  <p> <img src="img/Avatar 755.png" > <b>Hiaun </b></p>
+                    </div>
+                    <span> <img src="img/Rating 299.png"></span>
+                    <p>Tôm tươi ngon chắc thịt</p>
+                    <div class="comment-actions">
+                      <button class="like-btn">Thích 👍</button>
+                      <button class="dislike-btn">Không thích 👎</button>
+                      <button class="reply-btn">Trả lời  <textarea placeholder="Nhập câu trả lời của bạn..." ></textarea></button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+                <div class="review-item">
+                  <h3>Rau xà lách </h3>
+                  <span class="rating">
+                    <span> <img src="img/Rating 304.png" alt=" Danh giá "> (1 lượt đánh giá)</span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                  <div class="thumbnail1">
+                    <span><img src="img/xalach.jpg" alt="Sony A7 III"></span>
+                </div>
+                  <div class="thumbnail">
+                    
+                    <p> <img src="img/Avatar 756.png" > <b>Kou Te </b></p>
+                      </div>
+                      <span> <img src="img/Rating 304.png"></span>
+                  <p>Rau xà lách tôi mua từ cửa hàng này rất tươi và ngon. Lá xanh mướt, không có dấu hiệu của bất kỳ tổn thương nào. Tôi đã sử dụng chúng để làm salad và một số món nấu khác, và tôi rất hài lòng với chất lượng của chúng. Đặc biệt, 
+                    tôi rất ấn tượng với sự nhanh chóng và chuyên nghiệp trong việc giao hàng của cửa hàng. 
+                    Chắc chắn sẽ quay lại mua hàng ở đây trong tương lai</p>
+                  <div class="comment-actions">
+                    <button class="like-btn">Thích 👍</button>
+                    <button class="dislike-btn">Không thích 👎</button>
+                    <button class="reply-btn">Trả lời  <textarea placeholder="Nhập câu trả lời của bạn..." ></textarea></button>
+                  </div>
+                </div>
+                <div>
+                  <h1> Đánh Giá </h1>
+                    <label for="review">Đánh giá của bạn:</label> <br>
+                    <textarea id="review" name="review"  placeholder="Nhập đánh giá của bạn tại đây..."></textarea>
+                  </div>
+                  <div class="danhgia">
+                  <label>
+                    <b> Lựa chọn sao </b><br>
+                    <input type="radio" name="rating" value="1">
+                    <span class="icon">⭐️</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="rating" value="2">
+                    <span class="icon">⭐️</span>
+                    <span class="icon">⭐️</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="rating" value="3">
+                    <span class="icon">⭐️</span>
+                    <span class="icon">⭐️</span>
+                    <span class="icon">⭐️</span>        
+                  </label>
+                  <label>
+                    <input type="radio" name="rating" value="4">
+                    <span class="icon">⭐️</span>
+                    <span class="icon">⭐️</span>
+                    <span class="icon">⭐️</span>
+                    <span class="icon">⭐️</span>          
+                  </label>
+                  <label>
+                    <input type="radio" name="rating" value="5">
+                    <span class="icon">⭐️</span>
+                    <span class="icon">⭐️</span>
+                    <span class="icon">⭐️</span>
+                    <span class="icon">⭐️</span>
+                    <span class="icon">⭐️</span>      
+                  </label>
+                </div>
+                </div>
+            </div>
+          </section>
+            </div>
+        </section>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="intro">
+                    <h3>Giới thiệu</h3>
+                    <ul class="footerlinks">
+                        <li><a href="">Về chúng tôi</a></li>
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Khuyến mãi</a></li>  
+                    </ul>
+                </div>
+                <div class="rules">
+                    <h3>Điều khoản</h3>
+                    <ul class="footerlinks">
+                        <li><a href="">Điều khoản sử dụng</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h3>Liên hệ</h3>
+                    <ul class="footerlinks">
+                        <li><img src="img/telephone.png" id="iconfooter">CSKH: 0123456789</li>
+                        <li><img src="img/mail.png" id="iconfooter">Email: phamtan04022k3@gmail.com</li>
+                        <li>
+                            <p><img src="img/location1.png" id="iconfooter">Địa chỉ: 111/111 Quang Trung, phường 10, quận Gò Vấp, TP.HCM</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="socialmedia">
+                    <h3>Mạng xã hội</h3>
+                    <ul class="footerlinks">
+                        <li><a href="https://www.facebook.com/thamhtan4321" target="_blank"><img src="img/facebook.png" id="iconfooter">Facebook</a></li>
+                        <li><a href="" target="_blank"><img src="img/twitter-sign.png" id="iconfooter" >Twitter</a></li>
+                        <li><a href="" target="_blank"><img src="img/youtube.png" id="iconfooter">Youtube</a></li>
+                        <li><a href="" target="_blank"><img src="img/instagram.png" id="iconfooter">Instagram</a></li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="copyright">
+                <p>Copyright © 2023 - Phát triển bởi Thành Tân</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

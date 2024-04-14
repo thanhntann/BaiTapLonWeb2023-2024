@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Js/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <script src="Js/javascript.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div id="slidehead">
+                <marquee title="Buy now" onmouseover="this.stop()" onmouseout="this.start()" class="slideshow" behavior="alternate">
+                        <img src="img/location.png" id="icon">
+                        <span style="margin-right: 5%;">Hệ thống cửa hàng toàn quốc</span> 
+                        <img src="img/telephone-call.png" id="icon">
+                        <span style="margin-right: 5%;"> Liên hệ tư vấn: 0123456789</span>
+                        <img src="img/photo-camera.png" id="icon">
+                        <span>Hãy chọn thực phẩm sạch chính là bảo vệ sức khỏe của chính ta và gia đình!!!</span>
+                </marquee>
+            </div>
+            <div class="banner">
+                <div class="menu">
+                    <div class="buttonmenu" onclick="clickMenu()">
+                        <img src="img/menubutton3lines.png">
+                        
+                    </div>
+                    <a href="#" onclick="event.preventDefault()">
+                        <div class="logo">
+                            <img src="img/add.png" id="imglogo">
+                            <h2>Digital Food</h2>
+                        </div>
+                    </a>
+                    <div class="menuitem">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product.html">Shop</a></li>
+                        <li><a href="Review.html">Review</a></li>
+                        <li><a href="About Us.html">About us</a></li>
+                    </div>
+                    <form action="search" class="search-form">
+                        <img src="img/search.png">
+                        <input type="text" placeholder="Type product name..." class="txtsearch">
+                    </form>
+                    <div class="user">
+                        <a href="Login.html"><img src="img/user.png" width="32px" height="auto"></a>
+                        <a href=""><img src="img/add-to-cart.png" width="32px" height="auto" style="margin-right: 10px;" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="container">
+                <h2>LOGIN</h2>
+                <br/>
+                <div class="form">
+                    <input type="email" name="email" id="mail" class="textbox" placeholder=" " onblur="checkMail()"/>
+                    <label class="form_label" >Email</label><span id="mail_error" style="color: red; font-style: italic;"></span>
+                </div>
+                <br/>
+                <div class="form">
+                    <input
+                        type="password"
+                        name="password"
+                        id = "pass"
+                        class="textbox"
+                        placeholder=" "
+                    onblur="checkPass()"/>
+                    <label class="form_label" id="passtitle">Password</label><span id="pass_error" style="color: red; font-style: italic;"></span>
+                </div>
+                <div class="orlogin">
+                    <p>or</p>
+                    <hr>
+                </div>
+                <div class="social-account">
+                    <div>
+                        <img src="img/google.png">
+                    </div>
+                    <div><img src="img/facebookcirlke.png"></div>
+                    <div>
+                        <img src="img/twitter.png">
+                    </div>
+                </div>
+                <div class="button">
+                    <input id="btnLogin" type="submit" value="Log in" class="btn1" />
+                    <a  class="btn1" href="Signup.html">Sign up</a>
+                </div>
+              </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="intro">
+                    <h3>Giới thiệu</h3>
+                    <ul class="footerlinks">
+                        <li><a href="#" onclick="event.preventDefault()">Về chúng tôi</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">Sản phẩm</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">Khuyến mãi</a></li>  
+                    </ul>
+                    
+                </div>
+                <div class="rules">
+                    <h3>Điều khoản</h3>
+                    <ul class="footerlinks">
+                        <li><a href="#" onclick="event.preventDefault()">Điều khoản sử dụng</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h3>Liên hệ</h3>
+                    <ul class="footerlinks">
+                        <li><img src="img/telephone.png" id="iconfooter">CSKH: 0123456789</li>
+                        <li><img src="img/mail.png" id="iconfooter">Email: phamtan04022k31405@gmail.com</li>
+                        <li><p><img src="img/location1.png" id="iconfooter">Địa chỉ: 111/111 Quang Trung, phường 10, quận Gò Vấp, TP.HCM</p></li>
+                    </ul>
+                </div>
+                <div class="socialmedia">
+                    <h3>Mạng xã hội</h3>
+                    <ul class="footerlinks">
+                        <li><a href="https://www.facebook.com/thuandz321" target="_blank"><img src="img/facebook.png" id="iconfooter">Facebook</a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="img/twitter-sign.png" id="iconfooter" >Twitter</a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="img/youtube.png" id="iconfooter">Youtube</a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="img/instagram.png" id="iconfooter">Instagram</a></li>
+                    </ul>
+                </div>
+                
+            </div> 
+            <div class="copyright">
+                <p>Copyright © 2023 - Phát triển bởi  Thành Tân</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
